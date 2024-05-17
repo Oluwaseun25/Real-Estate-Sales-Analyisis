@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_89fe8d4bf7d02e320dee7fe81c3f8aa3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_89fe8d4bf7d02e320dee7fe81c3f8aa3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_89fe8d4bf7d02e320dee7fe81c3f8aa3 = L.map(
+                "map_89fe8d4bf7d02e320dee7fe81c3f8aa3",
+                {
+                    center: [1.1666666666666667, 1.1666666666666667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aa45f3ed429b89da7c4e62f4ad3eeea9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_aa45f3ed429b89da7c4e62f4ad3eeea9.addTo(map_89fe8d4bf7d02e320dee7fe81c3f8aa3);
+        
+    
+            var marker_648f4c358fb34ffe87d8ce66565a2a3a = L.marker(
+                [1.1666666666666667, 1.1666666666666667],
+                {}
+            ).addTo(map_89fe8d4bf7d02e320dee7fe81c3f8aa3);
+        
+    
+            var icon_155850a35e8ed539eca6173ec1a10a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_648f4c358fb34ffe87d8ce66565a2a3a.setIcon(icon_155850a35e8ed539eca6173ec1a10a10);
+        
+    
+        var popup_a9293135de632e29313b77ea646710a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07df32c31590a17dca6806047c554f63 = $(`<div id="html_07df32c31590a17dca6806047c554f63" style="width: 100.0%; height: 100.0%;">Town1 - Sales Ratio: 1.20</div>`)[0];
+                popup_a9293135de632e29313b77ea646710a0.setContent(html_07df32c31590a17dca6806047c554f63);
+            
+        
+
+        marker_648f4c358fb34ffe87d8ce66565a2a3a.bindPopup(popup_a9293135de632e29313b77ea646710a0)
+        ;
+
+        
+    
+    
+            var marker_a0ba11ce41fd5604b8bdbde9da4e4c5e = L.marker(
+                [1.1666666666666667, 1.1666666666666667],
+                {}
+            ).addTo(map_89fe8d4bf7d02e320dee7fe81c3f8aa3);
+        
+    
+            var icon_1c3e9e13155b5f816b297986db21c73d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0ba11ce41fd5604b8bdbde9da4e4c5e.setIcon(icon_1c3e9e13155b5f816b297986db21c73d);
+        
+    
+        var popup_cfaa59a0d351ab343e41401e0bcebb65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33366e4605e19e52cabcee390b0c61f3 = $(`<div id="html_33366e4605e19e52cabcee390b0c61f3" style="width: 100.0%; height: 100.0%;">Town2 - Sales Ratio: 0.80</div>`)[0];
+                popup_cfaa59a0d351ab343e41401e0bcebb65.setContent(html_33366e4605e19e52cabcee390b0c61f3);
+            
+        
+
+        marker_a0ba11ce41fd5604b8bdbde9da4e4c5e.bindPopup(popup_cfaa59a0d351ab343e41401e0bcebb65)
+        ;
+
+        
+    
+    
+            var marker_f8c8e52172635a988f8f819277297b36 = L.marker(
+                [1.1666666666666667, 1.1666666666666667],
+                {}
+            ).addTo(map_89fe8d4bf7d02e320dee7fe81c3f8aa3);
+        
+    
+            var icon_5143e208c3cb52404bc288ede75eb7b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8c8e52172635a988f8f819277297b36.setIcon(icon_5143e208c3cb52404bc288ede75eb7b5);
+        
+    
+        var popup_6d7266b74ea71e7aa3667e24f4b8f754 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5afe38bc00ee885d39dcec5a2e66abf = $(`<div id="html_a5afe38bc00ee885d39dcec5a2e66abf" style="width: 100.0%; height: 100.0%;">Town3 - Sales Ratio: 1.50</div>`)[0];
+                popup_6d7266b74ea71e7aa3667e24f4b8f754.setContent(html_a5afe38bc00ee885d39dcec5a2e66abf);
+            
+        
+
+        marker_f8c8e52172635a988f8f819277297b36.bindPopup(popup_6d7266b74ea71e7aa3667e24f4b8f754)
+        ;
+
+        
+    
+</script>
+</html>
